@@ -1,0 +1,10 @@
+<div>
+    <ng-container *ngFor="let p of listProject let i=index ">
+    <div>
+                    <p class="card-text "> Id: {{p.id}}</p>
+                    <p class="card-text "> Title: {{p.price}}</p>
+                    <p class="card-text "> Description: {{p.description}}</p>
+                    <button class="btn btn-warning" [routerLink]="['/addtask/',p.id]">Add Task</button>
+    </div>
+    </ng-container>
+</div>

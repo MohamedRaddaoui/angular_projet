@@ -1,0 +1,26 @@
+<form class="form-group" [formGroup]="formTask">
+    <label>id </label>
+    <input class="form-control" type="number" formControlName="id">
+    <div class="alert alert-danger" *ngIf="this.formTask.controls['id'].invalid &&
+     this.formTask.controls['id'].touched ">
+        <p *ngIf="formTask.controls['id'].getError('required')"> id required</p>
+    </div>
+    <label>title </label>
+    <input class="form-control" type="text" formControlName="title">
+    <div class="alert alert-danger" *ngIf="this.formTask.controls['title'].invalid && this.formTask.controls['title'].touched ">
+        <p *ngIf="formTask.controls['title'].getError('required')"> title required</p>
+        <p *ngIf="formTask.controls['title'].getError('minlength')"> title doit contenir au moins 6 caracteres</p>
+    </div>
+    <label>dateDebut </label>
+    <input class="form-control" type="date" formControlName="dateDebut">
+    <!-- <div class="alert alert-danger" *ngIf="this.formTask.controls['dateDebut'].invalid && this.formTask.controls['dateDebut'].touched ">
+        <p *ngIf="formTask.controls['dateDebut'].getError('required')"> dateDebut required</p>
+    </div> -->
+    <label>dateFin </label>
+    <input class="form-control" type="date" formControlName="dateFin">
+    <!-- <div class="alert alert-danger" *ngIf="this.formTask.controls['dateFin'].invalid && this.formTask.controls['dateFin'].touched ">
+        <p *ngIf="formTask.controls['dateFin'].getError('required')"> dateFin required</p>
+    </div> -->
+
+    <input type="submit" class="btn btn-primary mb-2" value="save" (click)="add()" [disabled]="formTask.invalid">
+</form>

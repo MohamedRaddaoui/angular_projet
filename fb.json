@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Angular",
+      "description": "Add Angular COmponent"
+    },
+    {
+      "id": "2",
+      "title": "Node",
+      "description": "Add Node COmponent"
+    },
+    {
+      "id": "3",
+      "title": "JAVA",
+      "description": "Add JAVA COmponent"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Mohamed Raddaoui",
+      "dateD": "2020-09-10",
+      "dateF": "2020-10-10",
+      "status": "To Do",
+      "project": {
+        "id": "1",
+        "title": "Angular",
+        "description": "Add Angular COmponent"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Create UML",
+      "dateD": "2024-10-10",
+      "dateF": "2024-10-11",
+      "status": "To Do",
+      "project": {
+        "id": "1",
+        "title": "Angular",
+        "description": "Add Angular COmponent"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Mohamed Raddaoui",
+      "dateD": "2024-08-10",
+      "dateF": "2024-10-10",
+      "status": "To Do",
+      "project": {
+        "id": "1",
+        "title": "Angular",
+        "description": "Add Angular COmponent"
+      }
+    },
+    {
+      "id": 888,
+      "title": "testhhh",
+      "dateD": "2024-11-05",
+      "dateF": "2024-11-12",
+      "status": "To Do",
+      "project": {
+        "id": "1",
+        "title": "Angular",
+        "description": "Add Angular COmponent"
+      }
+    },
+    {
+      "id": 555555,
+      "title": "tthklllll",
+      "dateD": "2024-11-06",
+      "dateF": "",
+      "status": "To Do",
+      "project": {
+        "id": "2",
+        "title": "Node",
+        "description": "Add Node COmponent"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

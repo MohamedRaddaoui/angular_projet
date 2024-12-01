@@ -1,0 +1,10 @@
+<div>
+    <ng-container *ngFor="let p of listTask let i=index ">
+    <div>
+                    <p class="card-text "> Id: {{p.id}}</p>
+                    <p class="card-text "> Title: {{p.title}}</p>
+                    <button class="btn btn-success " [routerLink]="['/detailstask',p.id]">Detail</button>
+    </div>
+    
+    </ng-container>
+</div>
